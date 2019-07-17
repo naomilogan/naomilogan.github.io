@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href = "style.css">
+	<head>
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <title>Naomi Logan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body {font-family: Oswald;}
+
+  /* Style the tab */
+  .tab {
+    overflow: hidden;
+    background-color: #E74C3C;
+  }
+
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #EC7063;
+  }
+
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #EC7063;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
+  </style>
+  </head>
+  <body>
+  <center>
+  <h2>Naomi Logan</h2>
+  </center>
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'About Me')">About Me</button>
+    <button class="tablinks" onclick="openCity(event, 'Extracurriculars')">Extracurriculars</button>
+    <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
+  </div>
+  <div id="About Me" class="tabcontent" style=display:block>
+    <h3>About Me</h3>
+    <center>
+    <img src="obamiconme.jpg" name="obamiconme" alt="obamicon" height="300" width="300">
+    <img src="friends.jpg" height="300" width="400">
+    <img src="samson.jpg" height="300" width="250">
+    </center>
+    <center>
+      <p style="font-family:Oswald;">
+        I am a seventeen year old girl who enjoys exploring computer science concepts and technology. I made this Obamicon filter through Python. I graduate from high school in 2020 and plan on going to college. I want to study computer science or acturarial science. My favorite subject in school is math. I live with my parents, older sister, and my dog in River Forest, IL. My favorite thing to do is hangout with my friends. I believe in women's rights, recycling, and efforts to reduce global warming!
+      </p>
+      <p style="font-family:Oswald;">
+        <u>Contact Information:</u> fallogan501@gmail.com
+      </p>
+      <p style="font-family:Oswald;">
+        <u>Education:</u> Oak Park and River Forest High School (<a href=http://oprfhs.org>oprfhs.org</a>)
+      </p>
+      <p style="font-family:Oswald;">
+        <u>Experience with Computer Science:</u> <br>Scratch, Python, HTML, CSS, JavaScript
+      </p>
+  </div>
+
+  <div id="Extracurriculars" class="tabcontent">
+    <h3>Extracurriculars</h3>
+      <p style="font-family:Oswald;">
+        <u>Student Council:</u> I like to represent the student body and be up-to-date on school events.
+        <br>
+        <u>Yearbook:</u> I love creating something that everyone can be a part of.
+        <br>
+        <u>Tau Gamma:</u> Tau Gamma opens up many volunteering opportunities for me.
+        <br>
+        <u>Best Buddies:</u> A place where I can befriend students with disabilities.
+        <br>
+        <u>Girls Who Code(<a href=https://girlswhocode.com>girlswhocode.com</a>):</u> I found a sisterhood at Girls Who Code who share a love of technology. Together, we are changing the role of women in STEM.
+      </p>
+      <p>
+        <img src="GWC.jpg" height="400" width="600">
+      </p>
+  </div>
+  <div id="Projects" class="tabcontent">
+    <h3>Projects</h3>
+    <p style="font-family:Oswald;">
+      Obamicon Filter
+    </p>
+    <p>
+      <img src="obamiconfilter.jpg" height="400" width="400">
+      <img src="obamiconfilter2.jpg" height="400" width="400">
+    </p>
+    <p style="font-family:Oswald;">
+      Word Cloud of Tweets: I analyzed data from Twitter to make a word cloud.
+    </p>
+    <p>
+      <img src="wordcloud.jpg" height="400" width="400">
+      <img src="wordcloudcode.jpg" height="400" width="500">
+    </p>
+    <p style="font-family:Oswald;">
+      Polarity and Subjectivity Histograms of Tweets: I analyzed the same data from Twitter to make histograms.
+    </p>
+    <p>
+      <img src="histogram.jpg" height="400" width="400">
+      <img src="polhist.jpg" height="400" width="400">
+      <img src="subhist.jpg" height="400" width="400">
+    </p>
+    <p style="font-family:Oswald;">
+      Maze Game: My group and I created a fun game on Scratch.
+      <br>
+      <iframe src="https://scratch.mit.edu/projects/319065988/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </p>
+  </div>
+  <script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+	<body>
+    <script src="web.js"></script>
+	</body>
+</html>
