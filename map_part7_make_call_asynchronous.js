@@ -74,7 +74,7 @@ function processCountryRequest() {
 	// Step 4: Once the request is completed,
 	// We look for errors.
 	if (countryRequest.status != 200 || countryRequest.responseText === "") {
-	 	alert("We were unable to find your requested country!");
+	 	alert("We were unable to find your requested country.");
 	 	return;
 	}
 
