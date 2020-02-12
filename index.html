@@ -11,7 +11,7 @@
   /* Style the tab */
   .tab {
     overflow: hidden;
-    background-color: #E74C3C;
+    background-color: #0489B1;
   }
 
   /* Style the buttons inside the tab */
@@ -28,12 +28,12 @@
 
   /* Change background color of buttons on hover */
   .tab button:hover {
-    background-color: #EC7063;
+    background-color: #00BFFF;
   }
 
   /* Create an active/current tablink class */
   .tab button.active {
-    background-color: #EC7063;
+    background-color: #00BFFF;
   }
 
   /* Style the tab content */
@@ -45,24 +45,22 @@
   </style>
   </head>
   <body>
-  <center>
   <h2>Naomi Logan</h2>
-  </center>
+  <div style="background-image: url('plant_photo.jpg');"></div>
   <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'About Me')">About Me</button>
     <button class="tablinks" onclick="openCity(event, 'Extracurriculars')">Extracurriculars</button>
     <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
   </div>
   <div id="About Me" class="tabcontent" style=display:block>
-    <h3>About Me</h3>
+    <h2 style="background-color:#FA8258;color:#1C1C1C;">About Me</h2>
     <center>
     <img src="obamiconme.jpg" name="obamiconme" alt="obamicon" height="300" width="300">
     <img src="friends.jpg" height="300" width="400">
-    <img src="samson.jpg" height="300" width="250">
     </center>
     <center>
       <p style="font-family:Oswald;">
-        I am a seventeen year old girl who enjoys exploring computer science concepts and technology. I made this Obamicon filter through Python and I made this website with HTML. I graduate from high school in 2020 and plan on going to college. I want to study computer science or acturarial science. My favorite subject in school is math. I live with my parents, older sister, and my dog in River Forest, IL. My favorite thing to do is hangout with my friends. I believe in women's rights, recycling, and efforts to reduce global warming!
+        I am a seventeen year old girl who enjoys exploring computer science concepts and technology. I made this Obamicon filter through Python. I graduate from high school in 2020 and plan on going to college. I want to study computer science or acturarial science. My favorite subject in school is math. I live with my parents, older sister, and my dog in River Forest, IL. My favorite thing to do is hangout with my friends! (<a href=https://girlswhocode.com>girlswhocode.com</a>)
       </p>
       <p style="font-family:Oswald;">
         <u>Contact Information:</u> fallogan501@gmail.com
@@ -71,44 +69,57 @@
         <u>Education:</u> Oak Park and River Forest High School (<a href=http://oprfhs.org>oprfhs.org</a>)
       </p>
       <p style="font-family:Oswald;">
-        <u>Experience with Computer Science:</u> <br>Scratch, Python, HTML, CSS, JavaScript, and Arduino
+        <u>Experience with Computer Science:</u> <br>Scratch, Python, HTML, CSS, JavaScript
       </p>
   </div>
+
   <div id="Extracurriculars" class="tabcontent">
-    <h3>Extracurriculars</h3>
+    <h2 style="background-color:#FA8258;">Extracurriculars</h2>
       <p style="font-family:Oswald;">
-        <u>Student Council:</u> I like to represent the student body and be up-to-date on school events.
-        <br>
-        <u>Yearbook:</u> I love creating something that everyone can be a part of.
-        <br>
-        <u>Tau Gamma:</u> Tau Gamma opens up many volunteering opportunities for me.
-        <br>
-        <u>Best Buddies:</u> A place where I can befriend students with disabilities.
-        <br>
-        <u>Girls Who Code(<a href=https://girlswhocode.com>girlswhocode.com</a>):</u> I found a sisterhood at Girls Who Code who share a love of technology. Together, we are changing the role of women in STEM.
+        <h3 style="background-color:#F7D358;">August 2018—present</h3>
+        Student Council - <i>Member</i>
+        <ul><li>Planned and developed charity and social events with a large student committee</li></ul>
+
+        Roses 4 Austin - <i>Member</i>
+        <ul><li>Taught kids arts and crafts at St. Catherine - St. Lucy School in Oak Park.</li></ul>
+
+        <h3 style="background-color:#F7D358;">August 2017—present</h3>
+        Yearbook - <i>Section Editor</i>
+        <ul>
+          <li>Oversaw writers, designers, and photographers to create spreads for the People section and complete deadlines in a timely manner.</li>
+          <li>Interviewed students and staff for stories.</li>
+          <li>Consulted teachers with the section’s progress.</li>
+        </ul>
+
+        <h3 style="background-color:#F7D358;">August 2016—present</h3>
+        Tau Gamma - <i>Member</i>
+        <ul><li>Volunteered at several events that help local families and a wide-range of charities.</li></ul>
+
+        Best Buddies - <i>Member</i>
+        <ul><li>Helped end the social isolation of students with special needs at school by reaching out to members in the club and participating at events.</li></ul>
       </p>
       <p>
         <img src="GWC.jpg" height="400" width="600">
       </p>
   </div>
   <div id="Projects" class="tabcontent">
-    <h3>Projects</h3>
+    <h2 style="background-color:#FA8258;">Projects</h2>
     <p style="font-family:Oswald;">
-      Obamicon Filter: I learned how to create the Obamicon filter on Python.
+      Obamicon Filter
     </p>
     <p>
       <img src="obamiconfilter.jpg" height="400" width="400">
       <img src="obamiconfilter2.jpg" height="400" width="400">
     </p>
     <p style="font-family:Oswald;">
-      Word Cloud of Tweets: I learned how to analyze data from Twitter to make a word cloud.
+      Word Cloud of Tweets: I analyzed data from Twitter to make a word cloud.
     </p>
     <p>
       <img src="wordcloud.jpg" height="400" width="400">
       <img src="wordcloudcode.jpg" height="400" width="500">
     </p>
     <p style="font-family:Oswald;">
-      Polarity and Subjectivity Histograms of Tweets: I analyzed the same data from Twitter to make histograms based on the polarity and subjectivity of the words from a number of tweets.
+      Polarity and Subjectivity Histograms of Tweets: I analyzed the same data from Twitter to make histograms.
     </p>
     <p>
       <img src="histogram.jpg" height="400" width="400">
@@ -116,11 +127,12 @@
       <img src="subhist.jpg" height="400" width="400">
     </p>
     <p style="font-family:Oswald;">
-      Maze Game: My group and I created a fun game on Scratch.
-      <br>
-      <iframe src="https://scratch.mit.edu/projects/319065988/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
-    </div>
+      Scratch Links
     </p>
+    <p style="font-family:Oswald;">
+      How I coded this website
+    </p>
+  </div>
   <script>
   function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
